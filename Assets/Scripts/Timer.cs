@@ -8,15 +8,19 @@ public class Timer : MonoBehaviour
 {
     public int timer;
     public Text timerText;
-    private DateTime timeNow;
-    private DateTime timeEnd;
+    private static DateTime timeNow;
+    private static DateTime timeEnd;
     private TimeSpan diffTime;
+    public static bool flag;
     // Start is called before the first frame update
     void Start()
     {
-        timeNow = DateTime.Now;
-        timeEnd = timeNow.AddMinutes(15);
-        Debug.Log(timeEnd);
+        if (!flag)
+        {
+            flag = true;
+            timeNow = DateTime.Now;
+            timeEnd = timeNow.AddMinutes(15);
+        }
     }
 
     // Update is called once per frame
@@ -24,7 +28,6 @@ public class Timer : MonoBehaviour
     {
         diffTime = timeEnd - timeNow;
         String cronometro = diffTime.ToString(@"mm\:ss");
-        Debug.Log(cronometro);
         timeNow = DateTime.Now;
         timerText.text = cronometro;
         //Debug.Log(auxTimer);
