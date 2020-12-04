@@ -6,13 +6,9 @@ using UnityEngine.SceneManagement;
 public class CambiarMinijuego : MonoBehaviour
 {
     public int scenaMinijuego;
-    // Start is called before the first frame update
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public GameObject control;
+    public int id;
+    public Sprite spriteGameComplete;
 
     public void cambiarScena()
     {
@@ -21,7 +17,8 @@ public class CambiarMinijuego : MonoBehaviour
 
     private void OnMouseDown()
     {
-        cambiarScena();
+        if( !control.GetComponent<Escena>().getGameCompleted(id))
+            cambiarScena();
     }
 
 }

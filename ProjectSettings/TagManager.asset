@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Game1
+  - DragParent
   layers:
   - Default
   - TransparentFX
