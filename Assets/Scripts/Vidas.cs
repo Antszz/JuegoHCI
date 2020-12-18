@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Vidas : MonoBehaviour
 {
     public static int vidas;
+    public Sprite noVida;
     private static bool flag;
     // Start is called before the first frame update
     void Start()
@@ -21,7 +22,7 @@ public class Vidas : MonoBehaviour
             for (int i = 3; i > vidas; i--)
             {
                 vida = GameObject.Find("vida" + i.ToString());
-                DestroyObject(vida);
+                vida.GetComponent<SpriteRenderer>().sprite = noVida;
             }
         }
     }
@@ -39,7 +40,7 @@ public class Vidas : MonoBehaviour
     public void BajarVida()
     {
         GameObject vida = GameObject.Find("vida" + vidas.ToString());
-        DestroyObject(vida);
+        vida.GetComponent<SpriteRenderer>().sprite = noVida;
         vidas--;
         if (vidas == 0)
         {

@@ -38,4 +38,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/AyudanteGame1Enigma.unity
     guid: c58fdf7cfd584a0448c875fb059b186b
+  - enabled: 1
+    path: Assets/Scenes/CanjearOContinuar.unity
+    guid: 759a32385b7645148a81efd2f1dcf0f7
+  - enabled: 1
+    path: Assets/Scenes/DesbloquearScena.unity
+    guid: d6a81c7d7012c574daed3782367fa5f0
+  - enabled: 1
+    path: Assets/Scenes/CanjearPremio.unity
+    guid: 2e8d1793af02c4443ad0d34ca0e51317
+  - enabled: 1
+    path: Assets/Scenes/Ganaste.unity
+    guid: eb819cb429e3cec46b85197071bd60d5
+  - enabled: 1
+    path: Assets/Scenes/CodigoDescuento.unity
+    guid: 039b5aa3de1f718419a9acb09737c6bf
+  - enabled: 1
+    path: Assets/Scenes/CambiarPiezas.unity
+    guid: be80a6718ca875140845c8e748e49ffb
+  - enabled: 1
+    path: Assets/Scenes/CodigoCambiarPzs.unity
+    guid: 209dbfa6794a3b84189d71ab18078867
   m_configObjects: {}

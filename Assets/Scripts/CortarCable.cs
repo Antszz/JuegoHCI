@@ -7,6 +7,7 @@ public class CortarCable : MonoBehaviour
 {
     public GameObject vidas;
     public GameObject control;
+    public GameObject timer;
     private void OnMouseDown()
     {
         if (gameObject.name != "Cable1")
@@ -15,8 +16,10 @@ public class CortarCable : MonoBehaviour
         }
         else
         {
-            control.GetComponent<Escena>().setGameCompleted(1);
-            SceneManager.LoadScene(3);
+            Debug.Log(control.GetComponent<Escena>().getGameActive());
+            control.GetComponent<Escena>().setGameCompleted(control.GetComponent<Escena>().getGameActive());
+
+            SceneManager.LoadScene(14);
         }
         DestroyObject(gameObject);
     }
