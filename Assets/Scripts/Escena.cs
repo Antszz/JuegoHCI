@@ -112,12 +112,40 @@ public class Escena : MonoBehaviour
         SceneManager.LoadScene(12);
     }
 
+    // public void IntercambiarPzs(){
+    //     if(inputCodigo.text == codigoIntercambio.text || (inputCodigo.text != "COD1" && inputCodigo.text != "COD2" && inputCodigo.text != "COD3" && inputCodigo.text != "COD4")){
+    //         errorCodigo.SetActive(true);
+    //     }
+    //     else{
+    //         errorCodigo.SetActive(false);
+    //         if(piezaCambiante == 1){
+    //             cantPieza1--;
+    //         }
+    //         if(piezaCambiante == 2){
+    //             cantPieza2--;
+    //         }
+    //         if(piezaCambiante == 3){
+    //             cantPieza3--;
+    //         }
+    //         if(piezaCambiante == 4){
+    //             cantPieza4--;
+    //         }
+
+    //         if(inputCodigo.text == "COD1")
+    //             cantPieza1++;
+    //         if(inputCodigo.text == "COD2")
+    //             cantPieza2++;
+    //         if(inputCodigo.text == "COD3")
+    //             cantPieza3++;
+    //         if(inputCodigo.text == "COD4")
+    //             cantPieza4++;
+    //         SceneManager.LoadScene(16);
+    //     }
+    // }
+
     public void IntercambiarPzs(){
-        if(inputCodigo.text == codigoIntercambio.text || (inputCodigo.text != "COD1" && inputCodigo.text != "COD2" && inputCodigo.text != "COD3" && inputCodigo.text != "COD4")){
-            errorCodigo.SetActive(true);
-        }
-        else{
-            errorCodigo.SetActive(false);
+        GameObject panel = GameObject.Find("Image");
+        if(panel.GetComponent<DropPzs>().existPz){
             if(piezaCambiante == 1){
                 cantPieza1--;
             }
@@ -131,15 +159,18 @@ public class Escena : MonoBehaviour
                 cantPieza4--;
             }
 
-            if(inputCodigo.text == "COD1")
+            if(panel.GetComponent<DropPzs>().pzDrop.name == "Pz1"){
                 cantPieza1++;
-            if(inputCodigo.text == "COD2")
+            }
+            if(panel.GetComponent<DropPzs>().pzDrop.name == "Pz2"){
                 cantPieza2++;
-            if(inputCodigo.text == "COD3")
+            }
+            if(panel.GetComponent<DropPzs>().pzDrop.name == "Pz3"){
                 cantPieza3++;
-            if(inputCodigo.text == "COD4")
+            }
+            if(panel.GetComponent<DropPzs>().pzDrop.name == "Pz4"){
                 cantPieza4++;
-            SceneManager.LoadScene(16);
+            }
         }
     }
 
