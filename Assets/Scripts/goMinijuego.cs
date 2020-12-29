@@ -12,8 +12,7 @@ public class goMinijuego : MonoBehaviour
         if (control.GetComponent<Escena>().getpiezaCompleted(id) && !control.GetComponent<Escena>().getGameCompleted(id))
         {
             control.GetComponent<Escena>().setGameActive(id);
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(20);
         }
-            
     }
 }

@@ -5,12 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class Vidas : MonoBehaviour
 {
+    public GameObject candados;
     public static int vidas;
     public Sprite noVida;
     private static bool flag;
     // Start is called before the first frame update
     void Start()
     {
+        if(candados){
+            flag = false;
+        }
         if (!flag)
         {
             flag = true;

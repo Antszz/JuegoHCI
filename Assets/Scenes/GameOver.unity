@@ -635,7 +635,7 @@ SpriteRenderer:
   m_SortingLayerID: 1453111285
   m_SortingLayer: -1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4152cca8f6fb7ef4daa1e6b0e9488593, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1cd56fd5d56de404bb08ef8706e1fa3f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -775,8 +775,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 348}
-  m_SizeDelta: {x: 686.92664, y: 312.3861}
+  m_AnchoredPosition: {x: 0, y: 78}
+  m_SizeDelta: {x: 948.68445, y: 483.53528}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1895803870
 MonoBehaviour:
@@ -810,7 +810,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Perdiste \n:c"
+  m_Text: 'Lamentablemente perdiste
+
+
+    Pero sigue intentando!!!'
 --- !u!222 &1895803871
 CanvasRenderer:
   m_ObjectHideFlags: 0

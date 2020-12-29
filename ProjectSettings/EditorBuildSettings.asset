@@ -65,4 +65,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NewIntercambiar.unity
     guid: c5771e4da48c56248b35f6d237854a1b
+  - enabled: 1
+    path: Assets/Scenes/SingleMultiOption.unity
+    guid: d03e1682713a68b4f9a1d2dbcc640a39
+  - enabled: 1
+    path: Assets/Scenes/GameSingle.unity
+    guid: c4607bbb7fa165c4ea4ed593201c613a
+  - enabled: 1
+    path: Assets/Scenes/Single1.unity
+    guid: 6da40335bc4ec1343aeec01fd13b9acb
+  - enabled: 1
+    path: Assets/Scenes/Singl2.unity
+    guid: 2c61b3187e25e484496b7bc0d512a815
+  - enabled: 1
+    path: Assets/Scenes/Cargando.unity
+    guid: c6a095e9fd29a264bb2099a418ac83c0
+  - enabled: 1
+    path: Assets/Scenes/CargandoAyu.unity
+    guid: 8a698953ce78cab4f81cbd9cb9472daf
   m_configObjects: {}
